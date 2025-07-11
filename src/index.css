@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap');
+@import "tailwindcss";
+@font-face {
+    font-family: 'Bitcount';
+    src: url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap') format('truetype');
+}
+
+body {
+     font-family: "Pixelify Sans", sans-serif;
+    color: white;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: burlywood;
+}
