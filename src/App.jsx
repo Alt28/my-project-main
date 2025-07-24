@@ -8,6 +8,7 @@ import Projects from './Components/Projects';
 function AnimatedRoutes() {
   const location = useLocation();
   return (
+    
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={
@@ -48,7 +49,7 @@ function AnimatedRoutes() {
 function App() {
   return (
     <Router>
-      <div className="min-h-screen w-full bg-gradient-to-br from-[#000000] to-[#434343]">
+     <div className="relative min-h-screen w-full bg-gradient-to-br from-[#2b5876] to-[#4e4376] z-0">
         <Navbar />
         <AnimatedRoutes />
       </div>

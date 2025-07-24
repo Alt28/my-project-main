@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from 'react-router-dom'
+import fblogo from '../assets/fblogo.png'
+import githublogo from '../assets/githublogo.png'
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -8,8 +10,16 @@ const Navbar = () => {
   return (
     <>
       {/* Top bar */}
-      <nav className="bg-White text-white px-4 py-4 flex justify-between items-center font-mono">
-  <button
+      <nav className="bg-White text-white px-4 py-4 flex justify-between items-start font-mono flex-row-reverse">
+        <div className="text-2xl font-bold flex flex-row items-start gap-2">
+          <Link to="/" className="hover:text-blue-300 transition">
+            <img className="h-15 w-15" src={githublogo} alt="GitHub Logo" />
+          </Link>
+          <Link to="/" className="hover:text-blue-300 transition">
+            <img className="h-15 w-15" src={fblogo} alt="Facebook Logo" />
+          </Link>
+        </div>
+        <button
     className="focus:outline-none"
     onClick={() => setDrawerOpen(true)}
     aria-label="Open navigation drawer"
